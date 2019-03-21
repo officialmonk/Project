@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.desktop{
+    height: 50px;
+    background-color:cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 350px;
+    margin-left: 10px;
+}
+input{
+    margin-left: 10px;
+}
+.burger{
+    background: cadetblue;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.burger span{
+    display: none;
+    margin: 4px;
+    width: 30px;
+    height: 1px;
+    background: #fff;
+}
+.mobile{
+    display: none;
+}
+.mobile_bar{
+    height: 230px;
+    background: cadetblue;
+    width: 100%;
+    display: flex;
+}
+.modal_registr{
+    background: cadetblue;
+    display: flex;
+    height: 300px;
+    justify-content: center;
+}
+.sign_mobile{
+    width: 50%;
+    margin-left: 26%;
+}
+.forma_registr{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    height: 200px;
+    width: 800px;
+}
+.registr{
+    margin-top: 5px;
+    width: 50%;
+}
+@media screen and (max-width: 768px){
+    .desktop{
+        display: none;
+    }
+    .burger span{
+        display: flex;
+    }
+    .mobile{
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_bar{
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .sign, .registr, {
+        min-width: 100px;
+    }
+}
