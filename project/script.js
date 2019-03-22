@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $(".mobile_bar").hide();
-    $(".modal_registr").hide();
-
+    $(".head").hide();
     $("#burg").on('click', function () {
         $(".mobile_bar").slideToggle();
         $(".modal_registr").slideUp();
@@ -50,7 +49,6 @@ $(document).ready(function () {
             $("#password_repeat_sign").val('');
         }
     })
-
     var sign_desktop = $("#sign_desktop");
     sign_desktop.click(function () {
         var name_desktop = $("#name_desktop").val();
@@ -62,7 +60,9 @@ $(document).ready(function () {
                 name_desktop: name_desktop,
                 password_desktop: password_desktop
             },
-            success: function () {
+            success: function (data) {
+                $("header").hide();
+                $(".head").hide();
                 $("#name_desktop").val('');
                 $("#password_desktop").val('');
                 $("#information").text(data);
@@ -83,7 +83,9 @@ $(document).ready(function () {
                 name_mobile: name_mobile,
                 password_mobile: password_mobile
             },
-            success: function () {
+            success: function (data) {
+                $("header").hide();
+                $(".head").hide();
                 $("#name_mobile").val('');
                 $("#password_mobile").val('');
                 $("#information").text(data);
@@ -92,3 +94,4 @@ $(document).ready(function () {
         })
     })
 })
+
