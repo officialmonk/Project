@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $(".mobile_bar").hide();
+    $(".modal_registr").hide();
     $(".head").hide();
     $("#burg").on('click', function () {
         $(".mobile_bar").slideToggle();
@@ -62,10 +63,10 @@ $(document).ready(function () {
             },
             success: function (data) {
                 $("header").hide();
-                $(".head").hide();
                 $("#name_desktop").val('');
                 $("#password_desktop").val('');
                 $("#information").text(data);
+                 $(".head").show();
 
             }
         })
@@ -85,10 +86,10 @@ $(document).ready(function () {
             },
             success: function (data) {
                 $("header").hide();
-                $(".head").hide();
                 $("#name_mobile").val('');
                 $("#password_mobile").val('');
                 $("#information").text(data);
+                $(".head").show();
 
             }
         })
