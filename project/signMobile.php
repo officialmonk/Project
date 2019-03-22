@@ -6,9 +6,8 @@ $password_mobile = $_POST['password_mobile'];
 $person = R::findOne('users', 'name = ?', array($name_mobile));
 
 if($person){
-    if($password_mobile, $person->password){
-        $_SESSION['logged_user'] = $person;
-    }
+    $_SESSION['logged_user'] = $person;
+    echo $person->name;
 }
 
 ?>
