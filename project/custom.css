@@ -64,6 +64,19 @@ input{
     margin-top: 5px;
     width: 50%;
 }
+.head{
+    display: flex;
+    height: 50px;
+    background: cadetblue;
+    justify-content: flex-end;
+    align-items: center;
+}
+.head img{
+    height: 50px;
+}
+.exit{
+    
+}
 @media screen and (max-width: 768px){
     .desktop{
         display: none;
