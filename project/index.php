@@ -9,14 +9,15 @@ require_once "db.php"
     <meta charset="UTF-8">
     <title>site3</title>
     <link rel="stylesheet" href="bootstrap-4.3.0-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
 </head>
 
 <body>
+   
     <header>
         <div class="desktop">
 
-            <input type="text" class="form-control sign" id="name_desktop" placeholder="name" autocomplete="off" required>
+         <input type="text" class="form-control sign" id="name_desktop" placeholder="name" autocomplete="off" required>
             <input type="password" class="form-control sign" id="password_desktop" placeholder="password" required>
             <button class="btn btn-primary form signbtn" id="sign_desktop">Ввойти</button>
 
@@ -50,13 +51,19 @@ require_once "db.php"
             </div>
         </div>
     </header>
-    <section id="information">
-    </section>
+    <section id="info">
+          <div class="head">
+              <img src="robot_PNG101.png" alt="">
+              <h1 id="information"></h1>
+               <input type="button" class="btn btn-primary exit" id="exit" value="Выход">
+          </div>
+           </section>
     <footer>
 
     </footer>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
